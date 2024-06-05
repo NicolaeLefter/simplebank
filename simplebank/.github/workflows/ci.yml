@@ -30,6 +30,8 @@ jobs:
           POSTGRES_USER: root
           POSTGRES_PASSWORD: nicu200013
           POSTGRES_DB: simple_bank
+        ports:
+          - 5432:5432
       # Set health cheks to until postgres has started
         options: >-
           --health-cmd pg_isready
